@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="pages/index.css">
+  <title>Mesto</title>
+</head>
+<body class="page">
+  <header class="header">
+    <a href="#" target="_blank" class="header__logo-link">
+      <img class="header__logo" src="./images/header-logo.svg" alt="Логотип">
+    </a>
+    <div class="header__line"></div>
+  </header>
+  <main class="content">
+    <div class="popup popup_opened">
+      <div class="popup__overlay"></div>
+      <div class="popup__content">
+        <div class="popup__close-button"></div>
+        <form class="form">
+          <h2 class="form__title">Редактировать профиль</h2>
+          <input type="text" name="heading" value="Жак-Ив Кусто" class="form__item form__item_el_heading">
+          <div class="form__line"></div>
+          <input type="text" name="subheading" value="Исследователь океана" class="form__item form__item_el_subheading">
+          <div class="form__line"></div>
+          <button type="submit" class="form__button">Сохранить</button>
+        </form>
+      </div>
+    </div>
+    <section class="profile">
+      <img class="profile__avatar" src="./images/Avatar.png" alt="Жак-Ив Кусто">
+      <div class="profile__info">
+        <div class="profile__item">
+          <h2 class="profile__title">Жак-Ив Кусто</h2>
+          <p class="profile__subtitle">Исследователь океана</p>
+        </div>
+        <button class="profile__edit-button" id="open_popup_btn">
+          <img class="profile__image-edit" src="./images/edit-button.png" alt="рисунок на кнопке">
+        </button>
+      </div>
+      <button class="profile__add-button">
+        <img class="profile__image-add" src="./images/add-button.png" alt="плюс на кнопке">
+      </button>
+    </section>
+    <section class="elements">
+      <article class="element">
+        <img class="element__image" src="./images/moscow.jpg" alt="Москва">
+        <div class="element__conteiner">
+          <h3 class="element__title">Москва</h3>
+          <div class="element__group"></div>
+        </div>
+      </article>
+      <article class="element">
+        <img class="element__image" src="./images/sevastopol.jpg" alt="Севастополь">
+        <div class="element__conteiner">
+          <h3 class="element__title">Севастополь</h3>
+          <div class="element__group"></div>
+        </div>
+      </article>
+      <article class="element">
+        <img class="element__image" src="./images/piter.jpg" alt="Санкт-Петербург">
+        <div class="element__conteiner">
+          <h3 class="element__title">Санкт-Петербург</h3>
+          <div class="element__group"></div>
+        </div>
+      </article>
+      <article class="element">
+        <img class="element__image" src="./images/ufa.jpg" alt="Уфа">
+        <div class="element__conteiner">
+          <h3 class="element__title">Уфа</h3>
+          <div class="element__group"></div>
+        </div>
+      </article>
+      <article class="element">
+        <img class="element__image" src="./images/omsk.jpg" alt="Омск">
+        <div class="element__conteiner">
+          <h3 class="element__title">Омск</h3>
+          <div class="element__group"></div>
+        </div>
+      </article>
+      <article class="element">
+        <img class="element__image" src="./images/kamchatka.jpg" alt="Камчатка">
+        <div class="element__conteiner">
+          <h3 class="element__title">Камчатка</h3>
+          <div class="element__group"></div>
+        </div>
+      </article>
+
+    </section>
+  </main>
+  <footer class="footer">
+    <p class="footer__copyright">&copy; 2020 Mesto Russia<p>
+  </footer>
+<script src="./scripts/index.js"></script>
+</body>
+</html>

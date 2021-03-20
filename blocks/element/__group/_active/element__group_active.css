@@ -1,0 +1,5 @@
+.element__group_active {
+  background-image: url(../../../../images/active__like.png);
+  opacity: 1;
+  transition: transform  ease-out;
+}

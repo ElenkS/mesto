@@ -1,0 +1,16 @@
+.element__group {
+  background-image: url(../../../images/element__like.png);
+  background-size: cover;
+  object-fit: cover;
+  border: 0;
+  min-width: 22px;
+  min-height: 19px;
+  margin: 5px 5px 1px auto;
+  opacity: 1;
+}
+
+.element__group:hover {
+  opacity: .5;
+  transition: transform .5s ease-out;
+  cursor: pointer;
+}

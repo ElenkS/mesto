@@ -1,0 +1,5 @@
+.profile__image-add {
+  max-width: 100%;
+  object-fit: cover;
+  margin: auto;
+}
