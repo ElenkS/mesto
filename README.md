@@ -20,4 +20,4 @@
 *работа с формами*
 *JavaScript*
 
- https://elenks.github.io/mesto/.html
+ https://elenks.github.io/mesto.index.html
