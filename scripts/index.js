@@ -11,15 +11,21 @@ let closeFormButton = document.querySelector('.form__button');
 
 function openPopup() {
   popup.classList.add('popup_opened');
+  nameInput.value = heading.textContent;
+  jobInput.value = subheading.textContent;
 }
 
 function closePopup() {
   popup.classList.remove('popup_opened');
 }
+function formSubmitHandler (evt) {
+  evt.preventDefault();
+    closePopup();
+    heading.textContent = nameInput.value;
+    subheading.textContent = jobInput.value;
+}
 openPopupBtn.addEventListener('click', function() {
 openPopup();
-nameInput.value = heading.textContent;
-jobInput.value = subheading.textContent;
 });
 closePopupBtn.addEventListener('click', function() {
   closePopup();
@@ -29,14 +35,6 @@ popupOverlay.addEventListener('click', function() {
   closePopup();
 });
 
-function formSubmitHandler (evt) {
-  evt.preventDefault();
-  closeFormButton.addEventListener('click', function() {
-    closePopup();
-    heading.textContent = nameInput.value;
-    subheading.textContent = jobInput.value;
-  });
-}
 
 formElement.addEventListener('submit', formSubmitHandler);
 
