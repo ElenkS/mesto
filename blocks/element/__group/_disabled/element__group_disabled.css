@@ -1,0 +1,8 @@
+.element__group_disabled {
+  background-image: url(../../../../images/element__like.svg);
+  background-size: cover;
+  object-fit: cover;
+  border: 0;
+  min-width: 22px;
+  min-height: 19px;
+}
