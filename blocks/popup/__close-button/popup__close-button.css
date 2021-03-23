@@ -4,6 +4,7 @@
   right: -45px;
   min-width: 48.28px;
   min-height: 48.28px;
+  padding: 0;
   cursor: pointer;
   opacity: 1;
   border: 0;
@@ -16,9 +17,9 @@
 
 @media screen and (max-width: 767px) {
   .popup__close-button {
-    top: -40px;
     right: -5px;
-    min-width: 26px;
-    min-height: 26px;
+    top: -55px;
+    max-width: 26px;
+    max-height: 26px;
   }
 }

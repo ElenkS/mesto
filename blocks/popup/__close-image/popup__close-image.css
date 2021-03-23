@@ -1,4 +1,6 @@
 .popup__close-image {
   object-fit: contain;
   background-size: cover;
+  max-width: 100%;
 }
+
